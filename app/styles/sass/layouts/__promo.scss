@@ -1,0 +1,72 @@
+.promo {
+  padding-top: 150px;
+  &__container {
+    background: linear-gradient(79.91deg, #e0ffdb 0%, #fee68d 100%);
+    border-radius: 20px;
+  }
+
+  &__row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    @include breakpoint(md) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+
+  &__content {
+    justify-self: center;
+    padding: 162px 0px 0px 115px;
+    @include breakpoint(lg) {
+      padding: 145px 0px 0px 85px;
+    }
+    @include breakpoint(md) {
+      padding: 115px 0px 0px 85px;
+    }
+    @include breakpoint(sm) {
+      padding: 80px 35px 0px 35px;
+    }
+  }
+
+  &__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin-bottom: 42px;
+    @include breakpoint(lg) {
+      font-size: 44px;
+    }
+    @include breakpoint(sm) {
+      font-size: 36px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    max-width: 465px;
+    @include breakpoint(lg) {
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+    width: 440px;
+    padding: 80px 0px;
+    @include breakpoint(lg) {
+      width: 350px;
+    }
+    @include breakpoint(md) {
+      padding: 40px 20px;
+      width: 260px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #070937;
+  --secondary-color: #6f6f6f;
+  --white: #ffff;
+  --accent-color: #0573e4;
+  --hover-color: #f5cd40;
+  --section-bg-color: #f9fbfd;
+  --content-width: 1250px;
+  --mobile-padding: 15px;
+  --gutter: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+}

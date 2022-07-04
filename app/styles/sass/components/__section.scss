@@ -1,0 +1,28 @@
+.section {
+  &__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin-bottom: 39px;
+    text-transform: uppercase;
+    text-align: center;
+    @include breakpoint(md) {
+      font-size: 32px;
+    }
+  }
+
+  &__block {
+    background-color: var(--section-bg-color);
+    border-radius: 20px;
+    padding-bottom: 90px;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px 30px;
+  }
+}

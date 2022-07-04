@@ -1,0 +1,308 @@
+.tabs {
+  &__container {
+    text-align: start;
+    padding: 0px 125px;
+    @include breakpoint(md) {
+      padding: 0px 85px;
+    }
+    @include breakpoint(sm) {
+      padding: 0px 35px;
+    }
+  }
+  &__item {
+    color: #b9cbdf;
+    cursor: pointer;
+    padding: 27px 200px;
+    border-bottom: 1px solid #b9cbdf;
+    margin-bottom: 80px;
+    @include breakpoint(lg) {
+      padding: 27px 100px;
+      margin-bottom: 60px;
+    }
+    @include breakpoint(md) {
+      padding: 22px 60px;
+      margin-bottom: 40px;
+    }
+    @include breakpoint(sm) {
+      padding: 18px 20px;
+    }
+  }
+
+  &__item.active {
+    border-bottom: 4px solid var(--accent-color);
+
+    color: var(--accent-color);
+  }
+
+  &__content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__btn {
+    padding: 42px 0px;
+  }
+
+  &__content-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    &::marker {
+      color: var(--accent-color);
+    }
+  }
+
+  &__content-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    max-width: 400px;
+  }
+
+  &__content-link {
+    display: block;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 31px;
+  }
+
+  &__content-info {
+    text-align: start;
+    padding: 60px 0px 68px 0px;
+    @include breakpoint(md) {
+      margin: 0 auto;
+      text-align: center;
+      padding: 40px 0px 48px 0px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+    @include breakpoint(lg) {
+      font-size: 24px;
+    }
+
+    &_mb {
+      margin-bottom: 37px;
+    }
+
+    &_help {
+      margin-bottom: 36px;
+    }
+
+    &_swift {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.6;
+      color: var(--accent-color);
+      padding-top: 60px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    padding: 40px 0px;
+    @include breakpoint(lg) {
+      font-size: 16px;
+      padding: 30px 0px;
+    }
+    & span {
+      font-weight: 700;
+    }
+    &_sb {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.6;
+      color: var(--primary-color);
+    }
+  }
+
+  &__row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 38px 48px;
+    margin-bottom: 61px;
+    padding: 0px 112px;
+    @include breakpoint(xl) {
+      padding: 0px 60px;
+    }
+    @include breakpoint(lg) {
+      padding: 0px 20px;
+      gap: 33px 40px;
+    }
+    @include breakpoint(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+    @include breakpoint(sm) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+
+    &_help {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 0px 33px;
+      justify-self: center;
+      @include breakpoint(lg) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 0px 25px;
+      }
+      @include breakpoint(sm) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px 20px;
+      }
+    }
+
+    &_army {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      background-color: var(--white);
+      box-shadow: 0px 8px 16px rgba(130, 130, 130, 0.1);
+      border-radius: 16px;
+      padding: 0px 50px;
+      @include breakpoint(md) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 0px;
+      }
+    }
+
+    &_sponsor {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+
+    &_contacts {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 32px 120px;
+      @include breakpoint(xl) {
+        gap: 10px 20px;
+      }
+      @include breakpoint(lg) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+      }
+    }
+  }
+
+  &__options {
+    background-color: var(--white);
+    padding: 33px 0px 33px 70px;
+    box-shadow: 0px 8px 16px rgba(130, 130, 130, 0.1);
+    border-radius: 50px;
+    position: relative;
+    &::before {
+      content: "";
+      background-color: var(--hover-color);
+      border-radius: 50%;
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      width: 60px;
+      height: 60px;
+      align-items: center;
+    }
+    &::after {
+      content: url("../../../images/dist/human-help/arrow.svg");
+      position: absolute;
+      top: 35%;
+      left: 15%;
+    }
+  }
+
+  &__options-help {
+    padding: 0px 20px;
+  }
+
+  &__options-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--accent-color);
+    background-color: var(--white);
+    width: 120px;
+    height: 120px;
+    padding: 45px;
+    border-radius: 50%;
+    margin: 0px auto 20px;
+  }
+
+  &__options-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-align: start;
+    margin-bottom: 58px;
+  }
+
+  &__contacts {
+    text-align: start;
+    display: flex;
+    padding: 31px 0px;
+  }
+
+  &__contacts-img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--hover-color);
+  }
+
+  &__contacts-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__contacts-info {
+    padding-left: 20px;
+    @include breakpoint(lg) {
+    }
+  }
+
+  &__contacts-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    position: relative;
+  }
+
+  &__contacts-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.6;
+    @include breakpoint(lg) {
+      font-size: 21px;
+      line-break: anywhere;
+    }
+  }
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
