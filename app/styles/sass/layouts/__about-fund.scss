@@ -1,0 +1,61 @@
+.about-fund {
+  padding: 40px 0px;
+  &__block {
+    padding: 80px 70px;
+    @include breakpoint(lg) {
+      padding: 60px 50px;
+    }
+    @include breakpoint(md) {
+      padding: 60px 20px;
+    }
+  }
+
+  &__block-title {
+    max-width: 1060px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 60px;
+    @include breakpoint(lg) {
+      font-size: 21px;
+    }
+    @include breakpoint(md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    @include breakpoint(lg) {
+      gap: 40px;
+    }
+    @include breakpoint(md) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+
+  &__pic {
+    @include breakpoint(md) {
+      margin: 0 auto;
+    }
+  }
+
+  &__card-info {
+    padding: 0px;
+    @include breakpoint(md) {
+      text-align: start;
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}

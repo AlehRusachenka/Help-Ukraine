@@ -1,0 +1,28 @@
+.faq {
+  padding-bottom: 200px;
+
+  &__block {
+    padding-top: 80px;
+  }
+
+  &__block-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    padding-right: 10px;
+    @include breakpoint(md) {
+      font-size: 21px;
+    }
+  }
+
+  &__accordion-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px 1.6;
+    color: var(--primary-color);
+    padding: 54px 70px;
+  }
+}

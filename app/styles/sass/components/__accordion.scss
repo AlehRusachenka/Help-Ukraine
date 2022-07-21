@@ -1,0 +1,52 @@
+.accordion {
+  cursor: pointer;
+  padding: 42px 110px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid #b9cbdf;
+  outline: none;
+  position: relative;
+  &:first-child {
+    border-top: none;
+  }
+  @include breakpoint(md) {
+    padding: 18px 70px;
+  }
+  @include breakpoint(sm) {
+    padding: 18px 20px;
+  }
+  &::after {
+    content: url("../../../images/dist/donation/plus.svg");
+    color: #b9cbdf;
+    font-weight: bold;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, 0%);
+    padding-right: 30px;
+    @include breakpoint(md) {
+      padding-right: 20px;
+    }
+    @include breakpoint(sm) {
+      padding-right: 10px;
+    }
+  }
+  &.active {
+    border-bottom: none;
+  }
+  &.active::after {
+    content: url("../../../images/dist/donation/minus.svg");
+  }
+
+  &__panel {
+    max-width: 1060px;
+    margin: 0px auto 60px;
+    padding: 0 18px;
+    background-color: var(--white);
+    border-radius: 20px;
+    display: none;
+    overflow: hidden;
+  }
+}

@@ -63,4 +63,12 @@
       line-break: anywhere;
     }
   }
+
+  &__contacts-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
 }

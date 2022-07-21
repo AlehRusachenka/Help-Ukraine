@@ -68,6 +68,18 @@
     border: none;
     top: 25%;
     z-index: 1;
+    &_prev {
+      background-color: #ecf4fe;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    &_next {
+      background-color: #ecf4fe;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
     &:hover {
       opacity: 0.6;
     }

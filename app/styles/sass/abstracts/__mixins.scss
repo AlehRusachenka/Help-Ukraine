@@ -1,34 +1,6 @@
-@mixin prime-btn {
-  background-color: var(--accent-color);
-  color: #fff;
-  border: none;
+@mixin button {
   border-radius: 100px;
-  padding: 15px 30px;
   font-weight: 700;
-  font-size: 20px;
   line-height: 1.2;
   transition: 0.3s linear;
-
-  &:hover {
-    background-color: var(--hover-color);
-  }
-}
-
-@mixin outline-btn {
-  color: var(--accent-color);
-  background-color: var(--white);
-  border: 2px solid var(--accent-color);
-  border-radius: 100px;
-  padding: 24px 60px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  transition: 0.3s linear;
-  &:hover {
-    background-color: var(--accent-color);
-    color: var(--white);
-  }
-  @include breakpoint(sm) {
-    padding: 24px 40px;
-  }
 }

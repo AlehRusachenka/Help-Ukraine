@@ -1,14 +1,10 @@
 .burger {
-  display: none;
   position: relative;
   background: transparent;
   padding: 0;
   border: 0;
   width: 24px;
   height: 20px;
-  @include breakpoint(md) {
-    display: block;
-  }
 
   &_closed {
     .burger__line:nth-child(2) {

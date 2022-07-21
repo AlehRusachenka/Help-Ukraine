@@ -1,0 +1,155 @@
+.team {
+  padding: 40px 0px 174px 0px;
+
+  &__block_bottom {
+    padding-bottom: 0px;
+  }
+
+  &__row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    @include breakpoint(md) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+    }
+    &_bottom {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      @include breakpoint(md) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+      }
+    }
+  }
+
+  &__card {
+    margin: 0 auto;
+    padding-top: 80px;
+    @include breakpoint(md) {
+      padding-top: 50px;
+    }
+    @include breakpoint(sm) {
+      padding-top: 20px;
+    }
+    &_contacts {
+      padding-top: 0px;
+      @include breakpoint(md) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__img {
+    @include breakpoint(md) {
+      padding: 0px 20px;
+    }
+  }
+
+  &__card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    max-width: 75%;
+    padding-bottom: 50px;
+    @include breakpoint(lg) {
+      padding-bottom: 30px;
+      font-size: 21px;
+    }
+    @include breakpoint(md) {
+      max-width: 100%;
+      padding: 0px 20px;
+    }
+  }
+
+  &__block-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    @include breakpoint(lg) {
+      font-size: 21px;
+    }
+  }
+
+  &__card-subtext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    max-width: 420px;
+    @include breakpoint(md) {
+      padding: 0px 20px;
+    }
+  }
+
+  &__card-btn {
+    max-width: 75%;
+    @include breakpoint(md) {
+      font-size: 21px;
+    }
+    @include breakpoint(sm) {
+      max-width: 100%;
+      padding: 10px 30px;
+    }
+  }
+
+  &__container {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 80px 0px;
+    @include breakpoint(md) {
+    }
+    @include breakpoint(sm) {
+      padding: 50px 0px;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    @include breakpoint(md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    color: var(--accent-color);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding-left: 30px;
+    @include breakpoint(md) {
+      padding-left: 0px;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__help_border {
+    border-top: 1px solid #b9cbdf;
+    border-bottom: 1px solid #b9cbdf;
+  }
+
+  &__contacts {
+    padding: 0px;
+  }
+
+  &__btn {
+    @include breakpoint(md) {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+}

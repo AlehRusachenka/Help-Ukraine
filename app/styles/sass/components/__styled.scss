@@ -1,0 +1,33 @@
+.styled {
+  text-align: start;
+  padding: 60px 0px 68px 0px;
+  @include breakpoint(md) {
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px 48px 0px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    &::marker {
+      color: var(--accent-color);
+    }
+    @include breakpoint(lg) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--primary-color);
+    @include breakpoint(lg) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,46 +1,10 @@
 .donation {
   padding: 60px 0px;
 
-  &__accordion {
+  &__block {
     background-color: var(--section-bg-color);
     border-radius: 20px 20px 0px 0px;
-    cursor: pointer;
-    padding: 18px 110px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    border-bottom: 1px solid #b9cbdf;
-    outline: none;
-    position: relative;
-    @include breakpoint(md) {
-      padding: 18px 70px;
-    }
-    @include breakpoint(sm) {
-      padding: 18px 20px;
-    }
-    &::after {
-      content: "\002B";
-      color: #b9cbdf;
-      font-weight: bold;
-      float: right;
-      position: absolute;
-      top: 50%;
-      right: 0%;
-      transform: translate(-50%, 0%);
-      padding-right: 30px;
-      @include breakpoint(md) {
-        padding-right: 20px;
-      }
-      @include breakpoint(sm) {
-        padding-right: 10px;
-      }
-    }
-    &.active {
-      border-bottom: none;
-    }
-    &.active::after {
-      content: "\2212";
-    }
+    padding-bottom: 60px;
   }
 
   &__accordion-title {
@@ -74,15 +38,5 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-  }
-
-  &__accordion-panel {
-    max-width: 1060px;
-    margin: 0 auto;
-    padding: 0 18px;
-    background-color: var(--white);
-    border-radius: 20px;
-    display: none;
-    overflow: hidden;
   }
 }

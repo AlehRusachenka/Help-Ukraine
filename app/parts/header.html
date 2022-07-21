@@ -26,16 +26,16 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="#!" class="header__logo-link">
+				<a href="index.html" class="header__logo-link">
 					<img src="./images/dist/header/logo.png" alt="logo" class="header__logo-img">
 				</a>
 				<nav class="header__nav">
 					<ul class="header__menu">
 						<li class="header__menu-item">
-							<a href="#!" class="header__menu-link">Про фонд</a>
+							<a href="about-fund.html" target="_blank" class="header__menu-link">Про фонд</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#!" class="header__menu-link">Часті запитання</a>
+							<a href="faq.html" target="_blank" class="header__menu-link">Часті запитання</a>
 						</li>
 						<li class="header__menu-item">
 							<a href="contacts.html" target="_blank" class="header__menu-link">Контакти</a>
@@ -43,14 +43,17 @@
 						<button type="submit" class="header__menu-btn prime-btn">Допомогти</button>
 					</ul>
 				</nav>
-				<div class="header__lang">
-					<img src="./images/dist/header/globe.svg" alt="lang" class="header__lang-icon">
-					<ul class="header__lang-menu">
-						<li class="header__lang-item header__menu-item_has-child">ENG
-							<ul class="header__lang-submenu">
-								<li class="header__lang-submenu-item">ENG</li>
-								<li class="header__lang-submenu-item">UKR</li>
-							</ul>
+				<div class="lang-switcher">
+					<button class="lang-switcher__btn">
+						<img src="./images/dist/header/globe.svg" alt="lang" class="lang-switcher__icon">
+						<p class="lang-switcher__text">ENG</p>
+					</button>
+					<ul class="lang-switcher__list">
+						<li class="lang-switcher__item lang-switcher__item_ukr">
+							<a href="#!" class="lang-switcher__link">UKR</a>
+						</li>
+						<li class="lang-switcher__item lang-switcher__item_eng">
+							<a href="#!" class="lang-switcher__link">ENG</a>
 						</li>
 					</ul>
 				</div>
