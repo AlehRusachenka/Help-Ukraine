@@ -17,7 +17,7 @@
     padding: 18px 20px;
   }
   &::after {
-    content: url("../../../images/dist/donation/plus.svg");
+    content: url("../images/dist/donation/plus.svg");
     color: #b9cbdf;
     font-weight: bold;
     float: right;
@@ -37,7 +37,7 @@
     border-bottom: none;
   }
   &.active::after {
-    content: url("../../../images/dist/donation/minus.svg");
+    content: url("../images/dist/donation/minus.svg");
   }
 
   &__panel {
