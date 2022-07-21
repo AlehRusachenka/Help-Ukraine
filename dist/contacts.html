@@ -27,16 +27,16 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="#!" class="header__logo-link">
+				<a href="index.html" class="header__logo-link">
 					<img src="./images/dist/header/logo.png" alt="logo" class="header__logo-img">
 				</a>
 				<nav class="header__nav">
 					<ul class="header__menu">
 						<li class="header__menu-item">
-							<a href="#!" class="header__menu-link">Про фонд</a>
+							<a href="about-fund.html" target="_blank" class="header__menu-link">Про фонд</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#!" class="header__menu-link">Часті запитання</a>
+							<a href="faq.html" target="_blank" class="header__menu-link">Часті запитання</a>
 						</li>
 						<li class="header__menu-item">
 							<a href="contacts.html" target="_blank" class="header__menu-link">Контакти</a>
@@ -44,14 +44,17 @@
 						<button type="submit" class="header__menu-btn prime-btn">Допомогти</button>
 					</ul>
 				</nav>
-				<div class="header__lang">
-					<img src="./images/dist/header/globe.svg" alt="lang" class="header__lang-icon">
-					<ul class="header__lang-menu">
-						<li class="header__lang-item header__menu-item_has-child">ENG
-							<ul class="header__lang-submenu">
-								<li class="header__lang-submenu-item">ENG</li>
-								<li class="header__lang-submenu-item">UKR</li>
-							</ul>
+				<div class="lang-switcher">
+					<button class="lang-switcher__btn">
+						<img src="./images/dist/header/globe.svg" alt="lang" class="lang-switcher__icon">
+						<p class="lang-switcher__text">ENG</p>
+					</button>
+					<ul class="lang-switcher__list">
+						<li class="lang-switcher__item lang-switcher__item_ukr">
+							<a href="#!" class="lang-switcher__link">UKR</a>
+						</li>
+						<li class="lang-switcher__item lang-switcher__item_eng">
+							<a href="#!" class="lang-switcher__link">ENG</a>
 						</li>
 					</ul>
 				</div>
@@ -67,89 +70,95 @@
 	<!-- Header End -->
 
 <!-- Contacts Start -->
-<section class="contacts">
+<div class="inner-page">
     <div class="container">
-        <p class="contacts__title section__title">Контакти</p>
-        <div class="contacts__block section__block">
-            <p class="contacts__block-title tabs__title">Напишіть і ми зв'яжемося з Вами!
-            </p>
-            <form class="contacts__form">
-                <div class="row contacts__row">
-                    <div class="contacts__list">
-                        <div class="contacts__item">
-                            <input type="text" name="name" class="contacts__input" placeholder="Ім’я*">
+        <p class="inner-page__title">Контакти</p>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <div class="contacts__block section__block">
+                <p class="contacts__block-title tabs__title">Напишіть і ми зв'яжемося з Вами!
+                </p>
+                <form class="contacts__form">
+                    <div class="row contacts__row">
+                        <div class="contacts__list">
+                            <div class="contacts__item">
+                                <input type="text" name="name" class="contacts__input" placeholder="Ім’я*">
+                            </div>
+                            <div class="contacts__item">
+                                <input type="tel" name="phone" class="contacts__input" placeholder="Телефон*">
+                            </div>
+                            <div class="contacts__item">
+                                <input type="email" name="email" class="contacts__input" placeholder="E-mail*">
+                            </div>
+                            <div class="contacts__item">
+                                <input type="text" name="city" class="contacts__input" placeholder="Місто*">
+                            </div>
                         </div>
-                        <div class="contacts__item">
-                            <input type="tel" name="phone" class="contacts__input" placeholder="Телефон*">
-                        </div>
-                        <div class="contacts__item">
-                            <input type="email" name="email" class="contacts__input" placeholder="E-mail*">
-                        </div>
-                        <div class="contacts__item">
-                            <input type="text" name="city" class="contacts__input" placeholder="Місто*">
-                        </div>
-                    </div>
-                    <div class="contacts__list">
-                        <div class="contacts__item">
-                            <textarea class="contacts__area" name="message" placeholder="Текст повідомлення"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="row contacts__row">
-                    <div class="contacts__item">
-                        <div class="contacts__policy">
-                            <input type="checkbox" name="policy" class="contacts__policy-checkbox" checked>
-                            <label for="" class="contacts__policy-text"> Я
-                                даю згоду на обробку
-                                моїх персональних даних</label>
+                        <div class="contacts__list">
+                            <div class="contacts__item">
+                                <textarea class="contacts__area" name="message"
+                                    placeholder="Текст повідомлення"></textarea>
+                            </div>
                         </div>
                     </div>
-                    <div class="contacts__item">
-                        <button type="submit" class="contacts__btn outline-btn">Відправити</button>
+                    <div class="row contacts__row">
+                        <div class="contacts__item">
+                            <div class="contacts__policy">
+                                <input id="policy" type="checkbox" name="policy" class="contacts__policy-checkbox"
+                                    checked>
+                                <label for="policy" class="contacts__policy-text"> Я
+                                    даю згоду на обробку
+                                    моїх персональних даних</label>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <button type="submit" class="contacts__btn outline-btn">Відправити</button>
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
-        <div class="contacts__info">
-            <div class="tabs__contacts">
-                <div class="tabs__contacts-img">
-                    <img src="./images/dist/contacts/map.svg" alt="map" class="tabs__contacts-pic">
-                </div>
-                <div class="tabs__contacts-info">
-                    <p class="tabs__contacts-title">Адреса:</p>
-                    <p class="tabs__contacts-text">02068, Україна, м. Київ, вул. Урлівська, буд. 40, оф.2</p>
-                </div>
+                </form>
             </div>
-            <div class="tabs__contacts">
-                <div class="tabs__contacts-img">
-                    <img src="./images/dist/contacts/phone.svg" alt="phone" class="tabs__contacts-pic">
+            <div class="contacts__info">
+                <div class="tabs__contacts">
+                    <div class="tabs__contacts-img">
+                        <img src="./images/dist/contacts/map.svg" alt="map" class="tabs__contacts-pic">
+                    </div>
+                    <div class="tabs__contacts-info">
+                        <p class="tabs__contacts-title">Адреса:</p>
+                        <p class="tabs__contacts-text">02068, Україна, м. Київ, вул. Урлівська, буд. 40, оф.2</p>
+                    </div>
                 </div>
-                <div class="tabs__contacts-info">
-                    <p class="tabs__contacts-title">Гаряча лінія:</p>
-                    <p class="tabs__contacts-text">+38 096 305 87 02</p>
+                <div class="tabs__contacts">
+                    <div class="tabs__contacts-img">
+                        <img src="./images/dist/contacts/phone.svg" alt="phone" class="tabs__contacts-pic">
+                    </div>
+                    <div class="tabs__contacts-info">
+                        <p class="tabs__contacts-title">Гаряча лінія:</p>
+                        <p class="tabs__contacts-text">+38 096 305 87 02</p>
+                    </div>
                 </div>
-            </div>
-            <div class="tabs__contacts">
-                <div class="tabs__contacts-img">
-                    <img src="./images/dist/contacts/schedule.svg" alt="schedule" class="tabs__contacts-pic">
+                <div class="tabs__contacts">
+                    <div class="tabs__contacts-img">
+                        <img src="./images/dist/contacts/schedule.svg" alt="schedule" class="tabs__contacts-pic">
+                    </div>
+                    <div class="tabs__contacts-info">
+                        <p class="tabs__contacts-title">Працюємо щодня:</p>
+                        <p class="tabs__contacts-text">09:00 – 19:00</p>
+                    </div>
                 </div>
-                <div class="tabs__contacts-info">
-                    <p class="tabs__contacts-title">Працюємо щодня:</p>
-                    <p class="tabs__contacts-text">09:00 – 19:00</p>
-                </div>
-            </div>
-            <div class="tabs__contacts">
-                <div class="tabs__contacts-img">
-                    <img src="./images/dist/contacts/mail.svg" alt="email" class="tabs__contacts-pic">
-                </div>
-                <div class="tabs__contacts-info">
-                    <p class="tabs__contacts-title">E-mail:</p>
-                    <p class="tabs__contacts-text">helptothepeopleofukraine@gmail.com</p>
+                <div class="tabs__contacts">
+                    <div class="tabs__contacts-img">
+                        <img src="./images/dist/contacts/mail.svg" alt="email" class="tabs__contacts-pic">
+                    </div>
+                    <div class="tabs__contacts-info">
+                        <p class="tabs__contacts-title">E-mail:</p>
+                        <p class="tabs__contacts-text">helptothepeopleofukraine@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- Contacts End -->
 
 <!-- Footer Big Start -->
@@ -170,25 +179,30 @@
 					</div>
 					<p class="footer-big__contacts-text">02068, Україна, м. Київ, вул. Урлівська, буд. 40, оф.2</p>
 				</div>
-				<div class="footer-big__contacts">
-					<div class="footer-big__contacts-img">
-						<img src="./images/dist/footer-big/phone.svg" alt="phone" class="footer-big__contacts-pic">
+				<a class="footer-big__contacts-link" href="tel:+380963058702">
+					<div class="footer-big__contacts">
+						<div class="footer-big__contacts-img">
+							<img src="./images/dist/footer-big/phone.svg" alt="phone" class="footer-big__contacts-pic">
+						</div>
+						<p class="footer-big__contacts-text">+38 096 305 87 02</p>
 					</div>
-					<p class="footer-big__contacts-text">+38 096 305 87 02</p>
-				</div>
-				<div class="footer-big__contacts">
-					<div class="footer-big__contacts-img">
-						<img src="./images/dist/footer-big/mail.svg" alt="mail" class="footer-big__contacts-pic">
+				</a>
+				<a href="mailto:helptothepeopleofukraine@gmail.com" class="footer-big__contacts-link">
+					<div class="footer-big__contacts">
+						<div class="footer-big__contacts-img">
+							<img src="./images/dist/footer-big/mail.svg" alt="mail" class="footer-big__contacts-pic">
+						</div>
+						<p class="footer-big__contacts-text">helptothepeopleofukraine@gmail.com</p>
 					</div>
-					<p class="footer-big__contacts-text">helptothepeopleofukraine@gmail.com</p>
-				</div>
-				<div class="footer-big__contacts">
-					<div class="footer-big__contacts-img">
-						<img src="./images/dist/footer-big/share.svg" alt="share" class="footer-big__contacts-pic">
+				</a>
+				<a href="www.helptothepeopleofukraine.com" class="footer-big__contacts-link">
+					<div class="footer-big__contacts">
+						<div class="footer-big__contacts-img">
+							<img src="./images/dist/footer-big/share.svg" alt="share" class="footer-big__contacts-pic">
+						</div>
+						<p class="footer-big__contacts-text">www.helptothepeopleofukraine.com</p>
 					</div>
-					<p class="footer-big__contacts-text">www.helptothepeopleofukraine.com</p>
-				</div>
-
+				</a>
 			</div>
 		</div>
 	</div>
