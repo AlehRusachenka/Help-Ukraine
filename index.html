@@ -27,16 +27,16 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__inner">
-				<a href="#!" class="header__logo-link">
+				<a href="index.html" class="header__logo-link">
 					<img src="./images/dist/header/logo.png" alt="logo" class="header__logo-img">
 				</a>
 				<nav class="header__nav">
 					<ul class="header__menu">
 						<li class="header__menu-item">
-							<a href="#!" class="header__menu-link">Про фонд</a>
+							<a href="about-fund.html" target="_blank" class="header__menu-link">Про фонд</a>
 						</li>
 						<li class="header__menu-item">
-							<a href="#!" class="header__menu-link">Часті запитання</a>
+							<a href="faq.html" target="_blank" class="header__menu-link">Часті запитання</a>
 						</li>
 						<li class="header__menu-item">
 							<a href="contacts.html" target="_blank" class="header__menu-link">Контакти</a>
@@ -44,14 +44,17 @@
 						<button type="submit" class="header__menu-btn prime-btn">Допомогти</button>
 					</ul>
 				</nav>
-				<div class="header__lang">
-					<img src="./images/dist/header/globe.svg" alt="lang" class="header__lang-icon">
-					<ul class="header__lang-menu">
-						<li class="header__lang-item header__menu-item_has-child">ENG
-							<ul class="header__lang-submenu">
-								<li class="header__lang-submenu-item">ENG</li>
-								<li class="header__lang-submenu-item">UKR</li>
-							</ul>
+				<div class="lang-switcher">
+					<button class="lang-switcher__btn">
+						<img src="./images/dist/header/globe.svg" alt="lang" class="lang-switcher__icon">
+						<p class="lang-switcher__text">ENG</p>
+					</button>
+					<ul class="lang-switcher__list">
+						<li class="lang-switcher__item lang-switcher__item_ukr">
+							<a href="#!" class="lang-switcher__link">UKR</a>
+						</li>
+						<li class="lang-switcher__item lang-switcher__item_eng">
+							<a href="#!" class="lang-switcher__link">ENG</a>
 						</li>
 					</ul>
 				</div>
@@ -205,7 +208,7 @@
 	<!-- Human Help End -->
 
 	<!-- Army Help Start -->
-	<section class="army-help">
+	<section class="army-help section">
 		<div class="container">
 			<p class="army-help__title section__title">допомога Армії</p>
 			<div class="army-help__block section__block">
@@ -224,7 +227,7 @@
 								інформацію та надішліть запит.</p>
 						</div>
 						<div class="row tabs__row tabs__row_army">
-							<div class="tabs__content-info">
+							<div class="tabs__content-info styled">
 								<p class="tabs__content-text">Ми розглядаємо запити, що заповнені САМЕ за зразком 👇</p>
 								<div><a href="#!" class="tabs__content-link">Зразок запиту</a></div>
 								<p class="tabs__content-text">Щоб завантажити скан або фотографію запиту, натисніть
@@ -232,17 +235,24 @@
 									запит”.</p>
 								<button type="submit" class="army-help__btn outline-btn">Подати запит</button>
 							</div>
-							<div class="tabs__content-info">
+							<div class="tabs__content-info styled">
 								<p class="tabs__title">Обов’язкові вимоги щодо запиту:</p>
-								<ul class="tabs__content-list">
-									<li class="tabs__content-item">номер в/ч, бригади, батальйону (бажано на бланку
+								<ul class="tabs__content-list styled__list">
+									<li class="tabs__content-item styled__item">номер в/ч, бригади, батальйону (бажано
+										на
+										бланку
 										підрозділу);</li>
-									<li class="tabs__content-item">текст заяви можна писати у довільній формі;</li>
-									<li class="tabs__content-item">ОБОВ’ЯЗКОВО тільки мокра гербова печатка;</li>
-									<li class="tabs__content-item">дані військовослужбовця на якого видається майно
+									<li class="tabs__content-item styled__item">текст заяви можна писати у довільній
+										формі;</li>
+									<li class="tabs__content-item styled__item">ОБОВ’ЯЗКОВО тільки мокра гербова
+										печатка;
+									</li>
+									<li class="tabs__content-item styled__item">дані військовослужбовця на якого
+										видається майно
 										(ПІБ,
 										посада, посвідчення);</li>
-									<li class="tabs__content-item">довірена особа, яку уповноважено забрати майно (у
+									<li class="tabs__content-item styled__item">довірена особа, яку уповноважено забрати
+										майно (у
 										разі
 										необхідності)</li>
 								</ul>
@@ -287,36 +297,39 @@
 					</div>
 					<div id="sponsor-army" data-tab-content class="tabs__info">
 						<div class="row tabs__row tabs__row_sponsor">
-							<div class="tabs__content-info">
+							<div class="tabs__content-info styled">
 								<p class="tabs__title">Українські військові <br>найбільше потребують:</p>
-								<ul class="tabs__content-list">
-									<li class="tabs__content-item">Бронежилети</li>
-									<li class="tabs__content-item">Шоломи</li>
-									<li class="tabs__content-item">Аптечки</li>
-									<li class="tabs__content-item">Спальні мішки</li>
-									<li class="tabs__content-item">довірена особа, яку уповноважено забрати майно (у
+								<ul class="tabs__content-list styled__list">
+									<li class="tabs__content-item styled__item">Бронежилети</li>
+									<li class="tabs__content-item styled__item">Шоломи</li>
+									<li class="tabs__content-item styled__item">Аптечки</li>
+									<li class="tabs__content-item styled__item">Спальні мішки</li>
+									<li class="tabs__content-item styled__item">довірена особа, яку уповноважено забрати
+										майно (у
 										Cпеціальне військове взуття</li>
-									<li class="tabs__content-item">Тактичні рукавиці</li>
-									<li class="tabs__content-item">Тепловізори</li>
-									<li class="tabs__content-item">Військова амуніція</li>
-									<li class="tabs__content-item">Рації</li>
+									<li class="tabs__content-item styled__item">Тактичні рукавиці</li>
+									<li class="tabs__content-item styled__item">Тепловізори</li>
+									<li class="tabs__content-item styled__item">Військова амуніція</li>
+									<li class="tabs__content-item styled__item">Рації</li>
 								</ul>
 							</div>
-							<div class="tabs__content-info">
+							<div class="tabs__content-info styled">
 								<p class="tabs__title">Медичне забезпечення:</p>
-								<ul class="tabs__content-list">
-									<li class="tabs__content-item">Турнікети</li>
-									<li class="tabs__content-item">Бандажі</li>
-									<li class="tabs__content-item">Пластирі</li>
-									<li class="tabs__content-item">Кровоспинні препарати</li>
-									<li class="tabs__content-item">Протиалергійні ліки</li>
-									<li class="tabs__content-item">Знеболюючі</li>
-									<li class="tabs__content-item">М’які ноші</li>
-									<li class="tabs__content-item">Пусті і повні медрюкзаки 20-30 літрів</li>
-									<li class="tabs__content-item">Протиопікові гідрогелеві пов’язки і гелі в пляшках
+								<ul class="tabs__content-list styled__list">
+									<li class="tabs__content-item styled__item">Турнікети</li>
+									<li class="tabs__content-item styled__item">Бандажі</li>
+									<li class="tabs__content-item styled__item">Пластирі</li>
+									<li class="tabs__content-item styled__item">Кровоспинні препарати</li>
+									<li class="tabs__content-item styled__item">Протиалергійні ліки</li>
+									<li class="tabs__content-item styled__item">Знеболюючі</li>
+									<li class="tabs__content-item styled__item">М’які ноші</li>
+									<li class="tabs__content-item styled__item">Пусті і повні медрюкзаки 20-30 літрів
+									</li>
+									<li class="tabs__content-item styled__item">Протиопікові гідрогелеві пов’язки і гелі
+										в пляшках
 										(burnjel, burntec)</li>
-									<li class="tabs__content-item">Ножиці для розрізання одягу</li>
-									<li class="tabs__content-item">Термоковдри</li>
+									<li class="tabs__content-item styled__item">Ножиці для розрізання одягу</li>
+									<li class="tabs__content-item styled__item">Термоковдри</li>
 								</ul>
 							</div>
 						</div>
@@ -359,15 +372,15 @@
 		<div class="container">
 			<p class="donation__title section__title">БЛАГОДІЙНІ ВНЕСКИ МОЖНА СПЛАТИТИ:</p>
 			<div class="donation__block section__block">
-				<button class="donation__accordion">
+				<div class="donation__accordion accordion">
 					<div class="donation__accordion-info">
 						<div class="donation__accordion-img">
 							<img src="./images/dist/donation/wallet.svg" class="donation__accordion-pic" alt="wallet">
 						</div>
 						<p class="donation__accordion-title">Криптовалюта</p>
 					</div>
-				</button>
-				<div class="donation__accordion-panel">
+				</div>
+				<div class="donation__accordion-panel accordion__panel tabs">
 					<div class="donation__payments tabs__contacts">
 						<div class="tabs__contacts-img">
 							<img src="./images/dist/donation/bitcoin.svg" alt="bitcoin" class="tabs__contacts-pic">
@@ -396,15 +409,15 @@
 						</div>
 					</div>
 				</div>
-				<button class="donation__accordion">
+				<div class="donation__accordion accordion">
 					<div class="donation__accordion-info">
 						<div class="donation__accordion-img">
 							<img src="./images/dist/donation/paypal.svg" class="donation__accordion-pic" alt="paypal">
 						</div>
 						<p class="donation__accordion-title">PayPal</p>
 					</div>
-				</button>
-				<div class="donation__accordion-panel">
+				</div>
+				<div class="donation__accordion-panel accordion__panel tabs">
 					<div class="donation__payments tabs__contacts">
 						<div class="tabs__contacts-img">
 							<img src="./images/dist/donation/mail.svg" alt="mail" class="tabs__contacts-pic">
@@ -419,7 +432,7 @@
 						</div>
 					</div>
 				</div>
-				<button class="donation__accordion">
+				<div class="donation__accordion accordion">
 					<div class="donation__accordion-info">
 						<div class="donation__accordion-img">
 							<img src="./images/dist/donation/transfer.svg" class="donation__accordion-pic"
@@ -427,8 +440,8 @@
 						</div>
 						<p class="donation__accordion-title">Перекази по Україні</p>
 					</div>
-				</button>
-				<div class="donation__accordion-panel">
+				</div>
+				<div class="donation__accordion-panel accordion__panel tabs">
 					<p class="tabs__text">БО Міжнародний Благодійний Фонд «Допомога Народу України» ЄДРПОУ
 						44863525 <br> Призначення платежу «Благодійна допомога»</p>
 					<div class="donation__payments tabs__contacts">
@@ -459,45 +472,63 @@
 						</div>
 					</div>
 				</div>
-				<button class="donation__accordion">
+				<div class="donation__accordion accordion">
 					<div class="donation__accordion-info">
 						<div class="donation__accordion-img">
 							<img src="./images/dist/donation/swift.svg" class="donation__accordion-pic" alt="swift">
 						</div>
 						<p class="donation__accordion-title">SWIFT перекази з-за кордону</p>
 					</div>
-				</button>
-				<div class="donation__accordion-panel">
+				</div>
+				<div class="donation__accordion-panel accordion__panel tabs">
 					<p class="tabs__title tabs__title_swift">SWIFT in US dollars (USD):</p>
-					<ul class="tabs__content-list">
-						<li class="tabs__content-item">Company details: МБФ ДОПОМОГА НАРОДУ УКРАIНИ БО;</li>
-						<li class="tabs__content-item">IBAN Code: UA143052990000026000046229279;</li>
-						<li class="tabs__content-item">Name of the bank: JSC CB; PRIVATBANK, 1D HRUSHEVSKOHO STR., KYIV,
+					<ul class="tabs__content-list styled__list">
+						<li class="tabs__content-item styled__item">Company details: МБФ ДОПОМОГА НАРОДУ УКРАIНИ БО;
+						</li>
+						<li class="tabs__content-item styled__item">IBAN Code: UA143052990000026000046229279;</li>
+						<li class="tabs__content-item styled__item">Name of the bank: JSC CB; PRIVATBANK, 1D
+							HRUSHEVSKOHO
+							STR., KYIV,
 							01001, UKRAINE;</li>
-						<li class="tabs__content-item">Bank SWIFT Code: PBANUA2X;</li>
-						<li class="tabs__content-item">Company address: UA 01001 м Київ вул Урлiвська б.40 кв.2;</li>
-						<li class="tabs__content-item">Account in the correspondent bank: 001-1-000080;</li>
-						<li class="tabs__content-item">SWIFT Code of the correspondent bank: CHASUS33;</li>
-						<li class="tabs__content-item">Correspondent bank: JP Morgan Chase Bank, New York ,US;</li>
-						<li class="tabs__content-item">Account in the correspondent bank: 890-0085-754;</li>
-						<li class="tabs__content-item">SWIFT Code of the correspondent bank: IRVT US 3N;</li>
-						<li class="tabs__content-item">Correspondent bank: The Bank of New York Mellon, New York, USA.
+						<li class="tabs__content-item styled__item">Bank SWIFT Code: PBANUA2X;</li>
+						<li class="tabs__content-item styled__item">Company address: UA 01001 м Київ вул Урлiвська б.40
+							кв.2;</li>
+						<li class="tabs__content-item styled__item">Account in the correspondent bank: 001-1-000080;
+						</li>
+						<li class="tabs__content-item styled__item">SWIFT Code of the correspondent bank: CHASUS33;</li>
+						<li class="tabs__content-item styled__item">Correspondent bank: JP Morgan Chase Bank, New York
+							,US;</li>
+						<li class="tabs__content-item styled__item">Account in the correspondent bank: 890-0085-754;
+						</li>
+						<li class="tabs__content-item styled__item">SWIFT Code of the correspondent bank: IRVT US 3N;
+						</li>
+						<li class="tabs__content-item styled__item">Correspondent bank: The Bank of New York Mellon, New
+							York, USA.
 						</li>
 					</ul>
 					<p class="tabs__title tabs__title_swift">SWIFT in euros (EUR)</p>
-					<ul class="tabs__content-list">
-						<li class="tabs__content-item">Company details: МБФ ДОПОМОГА НАРОДУ УКРАIНИ БО;</li>
-						<li class="tabs__content-item">IBAN Code: UA143052990000026000046229279;</li>
-						<li class="tabs__content-item">Name of the bank: JSC CB; PRIVATBANK, 1D HRUSHEVSKOHO STR., KYIV,
+					<ul class="tabs__content-list styled__list">
+						<li class="tabs__content-item styled__item">Company details: МБФ ДОПОМОГА НАРОДУ УКРАIНИ БО;
+						</li>
+						<li class="tabs__content-item styled__item">IBAN Code: UA143052990000026000046229279;</li>
+						<li class="tabs__content-item styled__item">Name of the bank: JSC CB; PRIVATBANK, 1D
+							HRUSHEVSKOHO
+							STR., KYIV,
 							01001, UKRAINE;</li>
-						<li class="tabs__content-item">Bank SWIFT Code: PBANUA2X;</li>
-						<li class="tabs__content-item">Company address: UA 01001 м Київ вул Урлiвська б.40 кв.2;</li>
-						<li class="tabs__content-item">Account in the correspondent bank: 001-1-000080;</li>
-						<li class="tabs__content-item">SWIFT Code of the correspondent bank: CHASUS33;</li>
-						<li class="tabs__content-item">Correspondent bank: JP Morgan Chase Bank, New York ,US;</li>
-						<li class="tabs__content-item">Account in the correspondent bank: 890-0085-754;</li>
-						<li class="tabs__content-item">SWIFT Code of the correspondent bank: IRVT US 3N;</li>
-						<li class="tabs__content-item">Correspondent bank: The Bank of New York Mellon, New York, USA.
+						<li class="tabs__content-item styled__item">Bank SWIFT Code: PBANUA2X;</li>
+						<li class="tabs__content-item styled__item">Company address: UA 01001 м Київ вул Урлiвська б.40
+							кв.2;</li>
+						<li class="tabs__content-item styled__item">Account in the correspondent bank: 001-1-000080;
+						</li>
+						<li class="tabs__content-item styled__item">SWIFT Code of the correspondent bank: CHASUS33;</li>
+						<li class="tabs__content-item styled__item">Correspondent bank: JP Morgan Chase Bank, New York
+							,US;</li>
+						<li class="tabs__content-item styled__item">Account in the correspondent bank: 890-0085-754;
+						</li>
+						<li class="tabs__content-item styled__item">SWIFT Code of the correspondent bank: IRVT US 3N;
+						</li>
+						<li class="tabs__content-item styled__item">Correspondent bank: The Bank of New York Mellon, New
+							York, USA.
 						</li>
 					</ul>
 				</div>
@@ -512,7 +543,7 @@
 			<p class="charity__title section__title">Благодійні лоти</p>
 			<p class="charity__text">В знак підтримки народу України ви можете отримати сувенір за певну суму
 				допомоги</p>
-			<section class="charity-slider splide" aria-labelledby="carousel-heading">
+			<div class="charity-slider splide" id="charity" aria-labelledby="carousel-heading">
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">
@@ -559,7 +590,7 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</div>
 		</div>
 	</section>
 	<!-- Charity End -->
@@ -585,25 +616,30 @@
 					</div>
 					<p class="footer-big__contacts-text">02068, Україна, м. Київ, вул. Урлівська, буд. 40, оф.2</p>
 				</div>
-				<div class="footer-big__contacts">
-					<div class="footer-big__contacts-img">
-						<img src="./images/dist/footer-big/phone.svg" alt="phone" class="footer-big__contacts-pic">
+				<a class="footer-big__contacts-link" href="tel:+380963058702">
+					<div class="footer-big__contacts">
+						<div class="footer-big__contacts-img">
+							<img src="./images/dist/footer-big/phone.svg" alt="phone" class="footer-big__contacts-pic">
+						</div>
+						<p class="footer-big__contacts-text">+38 096 305 87 02</p>
 					</div>
-					<p class="footer-big__contacts-text">+38 096 305 87 02</p>
-				</div>
-				<div class="footer-big__contacts">
-					<div class="footer-big__contacts-img">
-						<img src="./images/dist/footer-big/mail.svg" alt="mail" class="footer-big__contacts-pic">
+				</a>
+				<a href="mailto:helptothepeopleofukraine@gmail.com" class="footer-big__contacts-link">
+					<div class="footer-big__contacts">
+						<div class="footer-big__contacts-img">
+							<img src="./images/dist/footer-big/mail.svg" alt="mail" class="footer-big__contacts-pic">
+						</div>
+						<p class="footer-big__contacts-text">helptothepeopleofukraine@gmail.com</p>
 					</div>
-					<p class="footer-big__contacts-text">helptothepeopleofukraine@gmail.com</p>
-				</div>
-				<div class="footer-big__contacts">
-					<div class="footer-big__contacts-img">
-						<img src="./images/dist/footer-big/share.svg" alt="share" class="footer-big__contacts-pic">
+				</a>
+				<a href="www.helptothepeopleofukraine.com" class="footer-big__contacts-link">
+					<div class="footer-big__contacts">
+						<div class="footer-big__contacts-img">
+							<img src="./images/dist/footer-big/share.svg" alt="share" class="footer-big__contacts-pic">
+						</div>
+						<p class="footer-big__contacts-text">www.helptothepeopleofukraine.com</p>
 					</div>
-					<p class="footer-big__contacts-text">www.helptothepeopleofukraine.com</p>
-				</div>
-
+				</a>
 			</div>
 		</div>
 	</div>
